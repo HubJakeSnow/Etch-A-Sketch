@@ -1,15 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+  
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    background-color: gray;
-    width: 400px;
-    height: 400px;
+    width: 960px;
+    height: 960px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+#newGridButton {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: -75px;
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    border: solid white 2px;
+    border-radius: 8px;
+
+  }
+  
+#newGridButton:hover {
+    background-color: black;
 }
 
+
 .gridSquare {
-    background-color: brown;
+    background-color: blue;
     border: 1px solid black;
-    height: 50px;
-    width: 50px;
-}
+    margin: 0;
+  }
